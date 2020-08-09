@@ -95,12 +95,15 @@ if (obj_num %2 ==0){
 
 				 }
 				// Even array to objects
-				 for(int m=0;m<even_count;m++){
+				int m=0;
+				 for(int j=i;j<i+4;j=j+2){
 
-					 array_objects[m]=even_array[m];
+					 array_objects[j]=even_array[m];
+					 m++;
 
 
 				 }
+				 m=0;
 
 				 //--------------------------------------------------------------------------------------------
 
@@ -114,13 +117,13 @@ if (obj_num %2 ==0){
 				 						}
 
 				 			// odd array to objects
-				 			 for(int m=0;m<odd_count;m++){
+				 			 for(int j=i+1;j<i+4;j=j+2){
 
-				 				 array_objects[m]=odd_array[m];
-
+				 				 array_objects[j]=odd_array[m];
+				 				 m++;
 
 				 			 }
-
+				 			 m=0;
 				 			 even_count=0;odd_count=0;
 
 
@@ -133,11 +136,11 @@ if (obj_num %2 ==0){
 		for(int i=0;i<NUM_OBJECTS-1;i=i+N){
 			for (int j = i+1;j<i+N-1;j++){
 
-		if(j%2==0){
+		if(j%2!=0){
 
-			if ((array_objects[i]) > (array_objects[i+1])) {
+			if ((array_objects[j]) > (array_objects[j+1])) {
 
-				swap(&array_objects[i], &array_objects[i+1]);
+				swap(&array_objects[j], &array_objects[j+1]);
 		    }
 		}
 
@@ -163,7 +166,7 @@ void even_odd_merge_8(ap_uint<10> array_objects[NUM_OBJECTS]){
 			//-------------------------------------------------------------------------------------------
 			// Merging for 4*4 inputs
 			 //Separation of Even and odd elements
-			for(int i=0;i<N;i++){
+			for(int i=obj_num;i<obj_num+N;i++){
 //#pragma HLS UNROLL factor=2
 				if (i % 2==0){
 
@@ -202,8 +205,8 @@ void even_odd_merge_8(ap_uint<10> array_objects[NUM_OBJECTS]){
 			else {
 
 
-				if ((even_array[even_count/2]) > (even_array[even_count/2 +1])) {
-							swap(&even_array[even_count/2], &even_array[even_count/2+1]);
+				if ((even_array[(even_count/2)-1]) > (even_array[even_count/2])) {
+							swap(&even_array[(even_count/2)-1], &even_array[(even_count/2)]);
 
 					}
 
@@ -214,12 +217,14 @@ void even_odd_merge_8(ap_uint<10> array_objects[NUM_OBJECTS]){
 			}
 
 			// Even array to objects
-			 for(int i=0;i<even_count;i++){
+			int m=0;
+			 for(int i=obj_num;i<obj_num+N;i=i+2){
 
-				 array_objects[i]=even_array[i];
-
+				 array_objects[i]=even_array[m];
+				 m++;
 
 			 }
+			 m=0;
 
 			 //--------------------------------------------------------------------------------------------
 
@@ -247,8 +252,8 @@ void even_odd_merge_8(ap_uint<10> array_objects[NUM_OBJECTS]){
 			 			else {
 
 
-			 				if ((odd_array[odd_count/2]) > (odd_array[odd_count/2 +1])) {
-			 							swap(&even_array[odd_count/2], &even_array[odd_count/2+1]);
+			 				if ((odd_array[(odd_count/2)-1]) > (odd_array[odd_count/2])) {
+			 							swap(&odd_array[(odd_count/2)-1], &odd_array[(odd_count/2)]);
 
 			 					}
 
@@ -261,12 +266,13 @@ void even_odd_merge_8(ap_uint<10> array_objects[NUM_OBJECTS]){
 
 
 			 			// odd array to objects
-			 			 for(int i=0;i<odd_count;i++){
+			 			 for(int i=obj_num+1;i<obj_num+N;i=i+2){
 
-			 				 array_objects[i]=odd_array[i];
-
+			 				 array_objects[i]=odd_array[m];
+			 				 m++;
 
 			 			 }
+			 			 m=0;
 
 			 			 even_count=0;odd_count=0;
 
@@ -277,11 +283,11 @@ void even_odd_merge_8(ap_uint<10> array_objects[NUM_OBJECTS]){
 			 			for(int i=0;i<NUM_OBJECTS-1;i=i+N){
 			 						for (int j = i+1;j<i+N-1;j++){
 
-			 					if(j%2==0){
+			 					if(j%2!=0){
 
-			 						if ((array_objects[i]) > (array_objects[i+1])) {
+			 						if ((array_objects[j]) > (array_objects[j+1])) {
 
-			 							swap(&array_objects[i], &array_objects[i+1]);
+			 							swap(&array_objects[j], &array_objects[j+1]);
 			 					    }
 			 					}
 
@@ -307,7 +313,7 @@ void even_odd_merge_16 (ap_uint<10> array_objects[NUM_OBJECTS]){
 				//-------------------------------------------------------------------------------------------
 				// Merging for 4*4 inputs
 				 //Separation of Even and odd elements
-				for(int i=0;i<N;i++){
+				for(int i=obj_num;i<obj_num+N;i++){
 	//#pragma HLS UNROLL factor=2
 					if (i % 2==0){
 
@@ -346,8 +352,8 @@ void even_odd_merge_16 (ap_uint<10> array_objects[NUM_OBJECTS]){
 				else {
 
 
-					if ((even_array[even_count/2]) > (even_array[even_count/2 +1])) {
-								swap(&even_array[even_count/2], &even_array[even_count/2+1]);
+					if ((even_array[(even_count/2)-1]) > (even_array[even_count/2])) {
+								swap(&even_array[(even_count/2)-1], &even_array[(even_count/2)]);
 
 						}
 
@@ -358,12 +364,14 @@ void even_odd_merge_16 (ap_uint<10> array_objects[NUM_OBJECTS]){
 				}
 
 				// Even array to objects
-				 for(int i=0;i<even_count;i++){
+				int m=0;
+				 for(int i=obj_num;i<obj_num+N;i=i+2){
 
-					 array_objects[i]=even_array[i];
-
+					 array_objects[i]=even_array[m];
+					 m++;
 
 				 }
+				 m=0;
 
 				 //--------------------------------------------------------------------------------------------
 
@@ -391,8 +399,8 @@ void even_odd_merge_16 (ap_uint<10> array_objects[NUM_OBJECTS]){
 				 			else {
 
 
-				 				if ((odd_array[odd_count/2]) > (odd_array[odd_count/2 +1])) {
-				 							swap(&even_array[odd_count/2], &even_array[odd_count/2+1]);
+				 				if ((odd_array[(odd_count/2)-1]) > (odd_array[odd_count/2])) {
+				 							swap(&odd_array[(odd_count/2)-1], &odd_array[(odd_count/2)]);
 
 				 					}
 
@@ -405,12 +413,13 @@ void even_odd_merge_16 (ap_uint<10> array_objects[NUM_OBJECTS]){
 
 
 				 			// odd array to objects
-				 			 for(int i=0;i<odd_count;i++){
+				 			 for(int i=obj_num+1;i<obj_num+N;i=i+2){
 
-				 				 array_objects[i]=odd_array[i];
-
+				 				 array_objects[i]=odd_array[m];
+				 				 m++;
 
 				 			 }
+				 			 m=0;
 
 				 			 even_count=0;odd_count=0;
 
@@ -421,46 +430,197 @@ void even_odd_merge_16 (ap_uint<10> array_objects[NUM_OBJECTS]){
 				 			for(int i=0;i<NUM_OBJECTS-1;i=i+N){
 				 						for (int j = i+1;j<i+N-1;j++){
 
-				 					if(j%2==0){
+				 					if(j%2!=0){
 
-				 						if ((array_objects[i]) > (array_objects[i+1])) {
+				 						if ((array_objects[j]) > (array_objects[j+1])) {
 
-				 							swap(&array_objects[i], &array_objects[i+1]);
+				 							swap(&array_objects[j], &array_objects[j+1]);
 				 					    }
 				 					}
 
 				 			       }
 				 				}
 
+
+
 	}
 
 void even_odd_merge_32 (ap_uint<10> array_objects[NUM_OBJECTS]){
 
 	int N=32;int odd_count=0;int even_count=0;
-	ap_uint<10> even_array[16]= {0};
-	ap_uint<10> odd_array[16]= {0};
-		int numstage=6;
-		int len_comp=N/2;int len_comp_odd=len_comp;
-	#pragma HLS ARRAY_PARTITION variable=even_array complete dim=0
-#pragma HLS ARRAY_PARTITION variable=odd_array complete dim=0
+			ap_uint<10> even_array[16]= {0};
+			ap_uint<10> odd_array[16]= {0};
+			int numstage=((N-4)/4)+1;
+			int len_comp=0;
+		#pragma HLS ARRAY_PARTITION variable=even_array complete dim=0
+		#pragma HLS ARRAY_PARTITION variable=odd_array complete dim=0
+
+					//chg
+				for (int obj_num= 0; obj_num<NUM_OBJECTS; obj_num=obj_num+32) {
+				//#pragma HLS UNROLL factor=8
+
+					//-------------------------------------------------------------------------------------------
+					// Merging for 4*4 inputs
+					 //Separation of Even and odd elements
+					for(int i=obj_num;i<obj_num+N;i++){
+		//#pragma HLS UNROLL factor=2
+						if (i % 2==0){
+
+						even_array[even_count]=array_objects[i];even_count++;
+						}
+
+						else {
+
+						odd_array[odd_count]=array_objects[i];odd_count++;
+
+						}
+				}
+
+					//Even merging
+
+					//Number  of stages
+					for(int i=0;i<numstage;i++){
+						//check   the elements
+
+						  len_comp=(even_count-(2*i))/2;
+
+					if (len_comp!=1){
+						for (int j=i;j<even_count/2;j++){
+
+							if ((even_array[j]) > (even_array[j+len_comp])) {
+										swap(&even_array[j], &even_array[j+len_comp]);
+
+								}
 
 
-			for (int obj_num= 0; obj_num< NUM_OBJECTS; obj_num++) {
-			#pragma HLS UNROLL factor=16
 
-				//-------------------------------------------------------------------------------------------
-				// Merging for 4*4 inputs
-				 //Separation of Even and odd elements
-				for(int i=0;i<N;i++){
-	#pragma HLS UNROLL factor=2
-					if (i % 2==0){
+						}
 
-					even_array[even_count]=array_objects[obj_num+i];even_count++;
 					}
 
 					else {
 
-					odd_array[odd_count]=array_objects[obj_num+i];odd_count++;
+
+						if ((even_array[(even_count/2)-1]) > (even_array[even_count/2])) {
+									swap(&even_array[(even_count/2)-1], &even_array[(even_count/2)]);
+
+							}
+
+
+
+					}
+
+					}
+
+					// Even array to objects
+					int m=0;
+					 for(int i=obj_num;i<obj_num+N;i=i+2){
+
+						 array_objects[i]=even_array[m];
+						 m++;
+
+					 }
+					 m=0;
+
+					 //--------------------------------------------------------------------------------------------
+
+					 //odd merging
+					 //Number  of stages
+					 for(int i=0;i<numstage;i++){
+					 				//check   the elements
+
+					 				  len_comp=(odd_count-(2*i))/2;
+
+					 			if (len_comp!=1){
+					 				for (int j=i;j<odd_count/2;j++){
+
+					 					if ((odd_array[j]) > (odd_array[j+len_comp])) {
+					 								swap(&odd_array[j], &odd_array[j+len_comp]);
+
+					 						}
+
+
+
+					 				}
+
+					 			}
+
+					 			else {
+
+
+					 				if ((odd_array[(odd_count/2)-1]) > (odd_array[odd_count/2])) {
+					 							swap(&odd_array[(odd_count/2)-1], &odd_array[(odd_count/2)]);
+
+					 					}
+
+
+
+					 			}
+
+					 			}
+
+
+
+					 			// odd array to objects
+					 			 for(int i=obj_num+1;i<obj_num+N;i=i+2){
+
+					 				 array_objects[i]=odd_array[m];
+					 				 m++;
+
+					 			 }
+					 			 m=0;
+
+					 			 even_count=0;odd_count=0;
+
+
+				 }
+						//-------------------------------------------------------------------------------------------
+				        //Final compare
+					 			for(int i=0;i<NUM_OBJECTS-1;i=i+N){
+					 						for (int j = i+1;j<i+N-1;j++){
+
+					 					if(j%2!=0){
+
+					 						if ((array_objects[j]) > (array_objects[j+1])) {
+
+					 							swap(&array_objects[j], &array_objects[j+1]);
+					 					    }
+					 					}
+
+					 			       }
+					 				}
+
+
+	}
+
+void even_odd_merge_64 (ap_uint<10> array_objects[NUM_OBJECTS]){
+
+
+int N=64;int odd_count=0;int even_count=0;
+		ap_uint<10> even_array[32]= {0};
+		ap_uint<10> odd_array[32]= {0};
+		int numstage=((N-4)/4)+1;
+		int len_comp=0;
+	#pragma HLS ARRAY_PARTITION variable=even_array complete dim=0
+	#pragma HLS ARRAY_PARTITION variable=odd_array complete dim=0
+
+				//chg
+			for (int obj_num= 0; obj_num<NUM_OBJECTS; obj_num=obj_num+64) {
+			//#pragma HLS UNROLL factor=8
+
+				//-------------------------------------------------------------------------------------------
+				// Merging for 4*4 inputs
+				 //Separation of Even and odd elements
+				for(int i=obj_num;i<obj_num+N;i++){
+	//#pragma HLS UNROLL factor=2
+					if (i % 2==0){
+
+					even_array[even_count]=array_objects[i];even_count++;
+					}
+
+					else {
+
+					odd_array[odd_count]=array_objects[i];odd_count++;
 
 					}
 			}
@@ -471,9 +631,10 @@ void even_odd_merge_32 (ap_uint<10> array_objects[NUM_OBJECTS]){
 				for(int i=0;i<numstage;i++){
 					//check   the elements
 
-					  len_comp-=i;
+					  len_comp=(even_count-(2*i))/2;
 
-					for (int j=i;j<even_count-i;j++){
+				if (len_comp!=1){
+					for (int j=i;j<even_count/2;j++){
 
 						if ((even_array[j]) > (even_array[j+len_comp])) {
 									swap(&even_array[j], &even_array[j+len_comp]);
@@ -486,27 +647,44 @@ void even_odd_merge_32 (ap_uint<10> array_objects[NUM_OBJECTS]){
 
 				}
 
+				else {
+
+
+					if ((even_array[(even_count/2)-1]) > (even_array[even_count/2])) {
+								swap(&even_array[(even_count/2)-1], &even_array[(even_count/2)]);
+
+						}
+
+
+
+				}
+
+				}
+
 				// Even array to objects
-				 for(int i=0;i<even_count;i++){
+				int m=0;
+				 for(int i=obj_num;i<obj_num+N;i=i+2){
 
-					 array_objects[obj_num+i]=even_array[i];
-
+					 array_objects[i]=even_array[m];
+					 m++;
 
 				 }
+				 m=0;
 
 				 //--------------------------------------------------------------------------------------------
 
 				 //odd merging
 				 //Number  of stages
-				 			for(int i=0;i<numstage;i++){
+				 for(int i=0;i<numstage;i++){
 				 				//check   the elements
 
-				 				  len_comp_odd-=i;
+				 				  len_comp=(odd_count-(2*i))/2;
 
-				 				for (int j=i;j<odd_count-i;j++){
+				 			if (len_comp!=1){
+				 				for (int j=i;j<odd_count/2;j++){
 
-				 					if ((odd_array[j]) > (odd_array[j+len_comp_odd])) {
-				 								swap(&odd_array[j], &odd_array[j+len_comp_odd]);
+				 					if ((odd_array[j]) > (odd_array[j+len_comp])) {
+				 								swap(&odd_array[j], &odd_array[j+len_comp]);
 
 				 						}
 
@@ -516,33 +694,51 @@ void even_odd_merge_32 (ap_uint<10> array_objects[NUM_OBJECTS]){
 
 				 			}
 
-				 			// Even array to objects
-				 			 for(int i=0;i<odd_count;i++){
+				 			else {
 
-				 				 array_objects[obj_num+i]=odd_array[i];
 
+				 				if ((odd_array[(odd_count/2)-1]) > (odd_array[odd_count/2])) {
+				 							swap(&odd_array[(odd_count/2)-1], &odd_array[(odd_count/2)]);
+
+				 					}
+
+
+
+				 			}
+
+				 			}
+
+
+
+				 			// odd array to objects
+				 			 for(int i=obj_num+1;i<obj_num+N;i=i+2){
+
+				 				 array_objects[i]=odd_array[m];
+				 				 m++;
 
 				 			 }
+				 			 m=0;
+
+				 			 even_count=0;odd_count=0;
 
 
-
+			 }
 					//-------------------------------------------------------------------------------------------
 			        //Final compare
-					for(int i=1;i<N-1;i++){
-			#pragma HLS UNROLL factor=2
+				 			for(int i=0;i<NUM_OBJECTS-1;i=i+N){
+				 						for (int j = i+1;j<i+N-1;j++){
 
-						if ((array_objects[obj_num+i]) > (array_objects[obj_num+i+1])) {
-												swap(&array_objects[obj_num+i], &array_objects[obj_num+i+1]);
-				}
+				 					if(j%2!=0){
 
+				 						if ((array_objects[j]) > (array_objects[j+1])) {
 
-			}
+				 							swap(&array_objects[j], &array_objects[j+1]);
+				 					    }
+				 					}
 
-
-		}
-
-
-	}
+				 			       }
+				 				}
+}
 
 void connect_output(ap_uint<10> *array_objects, ap_uint<192> link_out[0]){
 	int index=0;
@@ -590,8 +786,8 @@ static ap_uint<10> array_objects[NUM_OBJECTS];
 	even_odd_sort_4_256(&array_objects[0]);
 	even_odd_merge_8(&array_objects[0]);
 	even_odd_merge_16(&array_objects[0]);
-	//even_odd_merge_32(&array_objects[NUM_OBJECTS]);
-	// even_odd_merge_64 (int array_objects[NUM_OBJECTS]);
+	even_odd_merge_32(&array_objects[0]);
+	even_odd_merge_64 (&array_objects[0]);
 	//void even_odd_merge_128 (int array_objects[NUM_OBJECTS]);
 	//void even_odd_merge_256 (int array_objects[NUM_OBJECTS]);
 	connect_output(&array_objects[0],&link_out[0]);
