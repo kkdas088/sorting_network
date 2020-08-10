@@ -1,0 +1,317 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'algo_unpacked'" level="0">
+<item name = "Date">Mon Aug 10 07:31:23 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">proj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">8.33</item>
+<item name = "Clock uncertainty (ns)">1.04</item>
+<item name = "Target initiation interval">3</item>
+<item name = "Estimated clock period (ns)">8.091</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">17, 17, 3, 3, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_even_odd_merge_64_fu_344">even_odd_merge_64, 6, 6, 3, 3, function</column>
+<column name="grp_even_odd_merge_32_fu_412">even_odd_merge_32, 3, 3, 3, 3, function</column>
+<column name="grp_even_odd_merge_16_fu_480">even_odd_merge_16, 2, 2, 3, 3, function</column>
+<column name="grp_even_odd_sort_4_256_fu_548">even_odd_sort_4_256, 2, 2, 3, 3, function</column>
+<column name="grp_even_odd_merge_8_fu_612">even_odd_merge_8, 2, 2, 3, 3, function</column>
+<column name="call_ret1_capture_objects_fu_680">capture_objects, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 4</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 9873, 41886</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 30</column>
+<column name="Register">-, -, 1293, -</column>
+<specialColumn name="Available">2940, 3600, 866400, 433200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 1, 9</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="call_ret1_capture_objects_fu_680">capture_objects, 0, 0, 0, 0</column>
+<column name="grp_even_odd_merge_16_fu_480">even_odd_merge_16, 0, 0, 1567, 5829</column>
+<column name="grp_even_odd_merge_32_fu_412">even_odd_merge_32, 0, 0, 2032, 9861</column>
+<column name="grp_even_odd_merge_64_fu_344">even_odd_merge_64, 0, 0, 4128, 18618</column>
+<column name="grp_even_odd_merge_8_fu_612">even_odd_merge_8, 0, 0, 963, 3741</column>
+<column name="grp_even_odd_sort_4_256_fu_548">even_odd_sort_4_256, 0, 0, 1183, 3837</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="array_objects_0_V_3_reg_3556">10, 0, 10, 0</column>
+<column name="array_objects_0_V_4_reg_3896">10, 0, 10, 0</column>
+<column name="array_objects_10_V_3_reg_3506">10, 0, 10, 0</column>
+<column name="array_objects_10_V_4_reg_3846">10, 0, 10, 0</column>
+<column name="array_objects_11_V_3_reg_3501">10, 0, 10, 0</column>
+<column name="array_objects_11_V_4_reg_3841">10, 0, 10, 0</column>
+<column name="array_objects_12_V_3_reg_3496">10, 0, 10, 0</column>
+<column name="array_objects_12_V_4_reg_3836">10, 0, 10, 0</column>
+<column name="array_objects_13_V_3_reg_3491">10, 0, 10, 0</column>
+<column name="array_objects_13_V_4_reg_3831">10, 0, 10, 0</column>
+<column name="array_objects_14_V_3_reg_3486">10, 0, 10, 0</column>
+<column name="array_objects_14_V_4_reg_3826">10, 0, 10, 0</column>
+<column name="array_objects_15_V_3_reg_3561">10, 0, 10, 0</column>
+<column name="array_objects_15_V_4_reg_3821">10, 0, 10, 0</column>
+<column name="array_objects_16_V_3_reg_3566">10, 0, 10, 0</column>
+<column name="array_objects_16_V_4_reg_3816">10, 0, 10, 0</column>
+<column name="array_objects_17_V_3_reg_3481">10, 0, 10, 0</column>
+<column name="array_objects_17_V_4_reg_3811">10, 0, 10, 0</column>
+<column name="array_objects_18_V_3_reg_3476">10, 0, 10, 0</column>
+<column name="array_objects_18_V_4_reg_3806">10, 0, 10, 0</column>
+<column name="array_objects_19_V_3_reg_3471">10, 0, 10, 0</column>
+<column name="array_objects_19_V_4_reg_3801">10, 0, 10, 0</column>
+<column name="array_objects_1_V_3_reg_3551">10, 0, 10, 0</column>
+<column name="array_objects_1_V_4_reg_3891">10, 0, 10, 0</column>
+<column name="array_objects_20_V_3_reg_3466">10, 0, 10, 0</column>
+<column name="array_objects_20_V_4_reg_3796">10, 0, 10, 0</column>
+<column name="array_objects_21_V_3_reg_3461">10, 0, 10, 0</column>
+<column name="array_objects_21_V_4_reg_3791">10, 0, 10, 0</column>
+<column name="array_objects_22_V_3_reg_3456">10, 0, 10, 0</column>
+<column name="array_objects_22_V_4_reg_3786">10, 0, 10, 0</column>
+<column name="array_objects_23_V_3_reg_3451">10, 0, 10, 0</column>
+<column name="array_objects_23_V_4_reg_3781">10, 0, 10, 0</column>
+<column name="array_objects_24_V_3_reg_3446">10, 0, 10, 0</column>
+<column name="array_objects_24_V_4_reg_3776">10, 0, 10, 0</column>
+<column name="array_objects_25_V_3_reg_3441">10, 0, 10, 0</column>
+<column name="array_objects_25_V_4_reg_3771">10, 0, 10, 0</column>
+<column name="array_objects_26_V_3_reg_3436">10, 0, 10, 0</column>
+<column name="array_objects_26_V_4_reg_3766">10, 0, 10, 0</column>
+<column name="array_objects_27_V_3_reg_3431">10, 0, 10, 0</column>
+<column name="array_objects_27_V_4_reg_3761">10, 0, 10, 0</column>
+<column name="array_objects_28_V_3_reg_3426">10, 0, 10, 0</column>
+<column name="array_objects_28_V_4_reg_3756">10, 0, 10, 0</column>
+<column name="array_objects_29_V_3_reg_3421">10, 0, 10, 0</column>
+<column name="array_objects_29_V_4_reg_3751">10, 0, 10, 0</column>
+<column name="array_objects_2_V_3_reg_3546">10, 0, 10, 0</column>
+<column name="array_objects_2_V_4_reg_3886">10, 0, 10, 0</column>
+<column name="array_objects_30_V_3_reg_3416">10, 0, 10, 0</column>
+<column name="array_objects_30_V_4_reg_3746">10, 0, 10, 0</column>
+<column name="array_objects_31_V_3_reg_3571">10, 0, 10, 0</column>
+<column name="array_objects_31_V_4_reg_3901">10, 0, 10, 0</column>
+<column name="array_objects_32_V_3_reg_3576">10, 0, 10, 0</column>
+<column name="array_objects_32_V_4_reg_3906">10, 0, 10, 0</column>
+<column name="array_objects_33_V_3_reg_3411">10, 0, 10, 0</column>
+<column name="array_objects_33_V_4_reg_3741">10, 0, 10, 0</column>
+<column name="array_objects_34_V_3_reg_3406">10, 0, 10, 0</column>
+<column name="array_objects_34_V_4_reg_3736">10, 0, 10, 0</column>
+<column name="array_objects_35_V_3_reg_3401">10, 0, 10, 0</column>
+<column name="array_objects_35_V_4_reg_3731">10, 0, 10, 0</column>
+<column name="array_objects_36_V_3_reg_3396">10, 0, 10, 0</column>
+<column name="array_objects_36_V_4_reg_3726">10, 0, 10, 0</column>
+<column name="array_objects_37_V_3_reg_3391">10, 0, 10, 0</column>
+<column name="array_objects_37_V_4_reg_3721">10, 0, 10, 0</column>
+<column name="array_objects_38_V_3_reg_3386">10, 0, 10, 0</column>
+<column name="array_objects_38_V_4_reg_3716">10, 0, 10, 0</column>
+<column name="array_objects_39_V_3_reg_3381">10, 0, 10, 0</column>
+<column name="array_objects_39_V_4_reg_3711">10, 0, 10, 0</column>
+<column name="array_objects_3_V_3_reg_3541">10, 0, 10, 0</column>
+<column name="array_objects_3_V_4_reg_3881">10, 0, 10, 0</column>
+<column name="array_objects_40_V_3_reg_3376">10, 0, 10, 0</column>
+<column name="array_objects_40_V_4_reg_3706">10, 0, 10, 0</column>
+<column name="array_objects_41_V_3_reg_3371">10, 0, 10, 0</column>
+<column name="array_objects_41_V_4_reg_3701">10, 0, 10, 0</column>
+<column name="array_objects_42_V_3_reg_3366">10, 0, 10, 0</column>
+<column name="array_objects_42_V_4_reg_3696">10, 0, 10, 0</column>
+<column name="array_objects_43_V_3_reg_3361">10, 0, 10, 0</column>
+<column name="array_objects_43_V_4_reg_3691">10, 0, 10, 0</column>
+<column name="array_objects_44_V_3_reg_3356">10, 0, 10, 0</column>
+<column name="array_objects_44_V_4_reg_3686">10, 0, 10, 0</column>
+<column name="array_objects_45_V_3_reg_3351">10, 0, 10, 0</column>
+<column name="array_objects_45_V_4_reg_3681">10, 0, 10, 0</column>
+<column name="array_objects_46_V_3_reg_3346">10, 0, 10, 0</column>
+<column name="array_objects_46_V_4_reg_3676">10, 0, 10, 0</column>
+<column name="array_objects_47_V_3_reg_3581">10, 0, 10, 0</column>
+<column name="array_objects_47_V_4_reg_3671">10, 0, 10, 0</column>
+<column name="array_objects_48_V_3_reg_3586">10, 0, 10, 0</column>
+<column name="array_objects_48_V_4_reg_3666">10, 0, 10, 0</column>
+<column name="array_objects_49_V_3_reg_3341">10, 0, 10, 0</column>
+<column name="array_objects_49_V_4_reg_3661">10, 0, 10, 0</column>
+<column name="array_objects_4_V_3_reg_3536">10, 0, 10, 0</column>
+<column name="array_objects_4_V_4_reg_3876">10, 0, 10, 0</column>
+<column name="array_objects_50_V_3_reg_3336">10, 0, 10, 0</column>
+<column name="array_objects_50_V_4_reg_3656">10, 0, 10, 0</column>
+<column name="array_objects_51_V_3_reg_3331">10, 0, 10, 0</column>
+<column name="array_objects_51_V_4_reg_3651">10, 0, 10, 0</column>
+<column name="array_objects_52_V_3_reg_3326">10, 0, 10, 0</column>
+<column name="array_objects_52_V_4_reg_3646">10, 0, 10, 0</column>
+<column name="array_objects_53_V_3_reg_3321">10, 0, 10, 0</column>
+<column name="array_objects_53_V_4_reg_3641">10, 0, 10, 0</column>
+<column name="array_objects_54_V_3_reg_3316">10, 0, 10, 0</column>
+<column name="array_objects_54_V_4_reg_3636">10, 0, 10, 0</column>
+<column name="array_objects_55_V_3_reg_3311">10, 0, 10, 0</column>
+<column name="array_objects_55_V_4_reg_3631">10, 0, 10, 0</column>
+<column name="array_objects_56_V_3_reg_3306">10, 0, 10, 0</column>
+<column name="array_objects_56_V_4_reg_3626">10, 0, 10, 0</column>
+<column name="array_objects_57_V_3_reg_3301">10, 0, 10, 0</column>
+<column name="array_objects_57_V_4_reg_3621">10, 0, 10, 0</column>
+<column name="array_objects_58_V_3_reg_3296">10, 0, 10, 0</column>
+<column name="array_objects_58_V_4_reg_3616">10, 0, 10, 0</column>
+<column name="array_objects_59_V_3_reg_3291">10, 0, 10, 0</column>
+<column name="array_objects_59_V_4_reg_3611">10, 0, 10, 0</column>
+<column name="array_objects_5_V_3_reg_3531">10, 0, 10, 0</column>
+<column name="array_objects_5_V_4_reg_3871">10, 0, 10, 0</column>
+<column name="array_objects_60_V_2_reg_3286">10, 0, 10, 0</column>
+<column name="array_objects_60_V_3_reg_3606">10, 0, 10, 0</column>
+<column name="array_objects_61_V_2_reg_3281">10, 0, 10, 0</column>
+<column name="array_objects_61_V_3_reg_3601">10, 0, 10, 0</column>
+<column name="array_objects_62_V_2_reg_3276">10, 0, 10, 0</column>
+<column name="array_objects_62_V_3_reg_3596">10, 0, 10, 0</column>
+<column name="array_objects_63_V_2_reg_3591">10, 0, 10, 0</column>
+<column name="array_objects_63_V_3_reg_3911">10, 0, 10, 0</column>
+<column name="array_objects_6_V_3_reg_3526">10, 0, 10, 0</column>
+<column name="array_objects_6_V_4_reg_3866">10, 0, 10, 0</column>
+<column name="array_objects_7_V_3_reg_3521">10, 0, 10, 0</column>
+<column name="array_objects_7_V_4_reg_3861">10, 0, 10, 0</column>
+<column name="array_objects_8_V_3_reg_3516">10, 0, 10, 0</column>
+<column name="array_objects_8_V_4_reg_3856">10, 0, 10, 0</column>
+<column name="array_objects_9_V_3_reg_3511">10, 0, 10, 0</column>
+<column name="array_objects_9_V_4_reg_3851">10, 0, 10, 0</column>
+<column name="grp_even_odd_merge_16_fu_480_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_even_odd_merge_32_fu_412_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_even_odd_merge_64_fu_344_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_even_odd_merge_8_fu_612_ap_start_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, algo_unpacked, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, algo_unpacked, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, algo_unpacked, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, algo_unpacked, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, algo_unpacked, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, algo_unpacked, return value</column>
+<column name="link_in_0_V">in, 192, ap_none, link_in_0_V, pointer</column>
+<column name="link_in_1_V">in, 192, ap_none, link_in_1_V, pointer</column>
+<column name="link_in_2_V">in, 192, ap_none, link_in_2_V, pointer</column>
+<column name="link_in_3_V">in, 192, ap_none, link_in_3_V, pointer</column>
+<column name="link_in_4_V">in, 192, ap_none, link_in_4_V, pointer</column>
+<column name="link_in_5_V">in, 192, ap_none, link_in_5_V, pointer</column>
+<column name="link_in_6_V">in, 192, ap_none, link_in_6_V, pointer</column>
+<column name="link_in_7_V">in, 192, ap_none, link_in_7_V, pointer</column>
+<column name="link_in_8_V">in, 192, ap_none, link_in_8_V, pointer</column>
+<column name="link_in_9_V">in, 192, ap_none, link_in_9_V, pointer</column>
+<column name="link_in_10_V">in, 192, ap_none, link_in_10_V, pointer</column>
+<column name="link_in_11_V">in, 192, ap_none, link_in_11_V, pointer</column>
+<column name="link_out_0_V_i">in, 192, ap_ovld, link_out_0_V, pointer</column>
+<column name="link_out_0_V_o">out, 192, ap_ovld, link_out_0_V, pointer</column>
+<column name="link_out_0_V_o_ap_vld">out, 1, ap_ovld, link_out_0_V, pointer</column>
+<column name="link_out_1_V_i">in, 192, ap_ovld, link_out_1_V, pointer</column>
+<column name="link_out_1_V_o">out, 192, ap_ovld, link_out_1_V, pointer</column>
+<column name="link_out_1_V_o_ap_vld">out, 1, ap_ovld, link_out_1_V, pointer</column>
+<column name="link_out_2_V_i">in, 192, ap_ovld, link_out_2_V, pointer</column>
+<column name="link_out_2_V_o">out, 192, ap_ovld, link_out_2_V, pointer</column>
+<column name="link_out_2_V_o_ap_vld">out, 1, ap_ovld, link_out_2_V, pointer</column>
+<column name="link_out_3_V_i">in, 192, ap_ovld, link_out_3_V, pointer</column>
+<column name="link_out_3_V_o">out, 192, ap_ovld, link_out_3_V, pointer</column>
+<column name="link_out_3_V_o_ap_vld">out, 1, ap_ovld, link_out_3_V, pointer</column>
+<column name="link_out_4_V_i">in, 192, ap_ovld, link_out_4_V, pointer</column>
+<column name="link_out_4_V_o">out, 192, ap_ovld, link_out_4_V, pointer</column>
+<column name="link_out_4_V_o_ap_vld">out, 1, ap_ovld, link_out_4_V, pointer</column>
+<column name="link_out_5_V_i">in, 192, ap_ovld, link_out_5_V, pointer</column>
+<column name="link_out_5_V_o">out, 192, ap_ovld, link_out_5_V, pointer</column>
+<column name="link_out_5_V_o_ap_vld">out, 1, ap_ovld, link_out_5_V, pointer</column>
+<column name="link_out_6_V_i">in, 192, ap_ovld, link_out_6_V, pointer</column>
+<column name="link_out_6_V_o">out, 192, ap_ovld, link_out_6_V, pointer</column>
+<column name="link_out_6_V_o_ap_vld">out, 1, ap_ovld, link_out_6_V, pointer</column>
+<column name="link_out_7_V_i">in, 192, ap_ovld, link_out_7_V, pointer</column>
+<column name="link_out_7_V_o">out, 192, ap_ovld, link_out_7_V, pointer</column>
+<column name="link_out_7_V_o_ap_vld">out, 1, ap_ovld, link_out_7_V, pointer</column>
+<column name="link_out_8_V_i">in, 192, ap_ovld, link_out_8_V, pointer</column>
+<column name="link_out_8_V_o">out, 192, ap_ovld, link_out_8_V, pointer</column>
+<column name="link_out_8_V_o_ap_vld">out, 1, ap_ovld, link_out_8_V, pointer</column>
+<column name="link_out_9_V_i">in, 192, ap_ovld, link_out_9_V, pointer</column>
+<column name="link_out_9_V_o">out, 192, ap_ovld, link_out_9_V, pointer</column>
+<column name="link_out_9_V_o_ap_vld">out, 1, ap_ovld, link_out_9_V, pointer</column>
+<column name="link_out_10_V_i">in, 192, ap_ovld, link_out_10_V, pointer</column>
+<column name="link_out_10_V_o">out, 192, ap_ovld, link_out_10_V, pointer</column>
+<column name="link_out_10_V_o_ap_vld">out, 1, ap_ovld, link_out_10_V, pointer</column>
+<column name="link_out_11_V_i">in, 192, ap_ovld, link_out_11_V, pointer</column>
+<column name="link_out_11_V_o">out, 192, ap_ovld, link_out_11_V, pointer</column>
+<column name="link_out_11_V_o_ap_vld">out, 1, ap_ovld, link_out_11_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">7.29</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'call_ret5', src/algo_unpacked.cpp:363">call, 7.29, 7.29, -, -, -, -, -, -, -, -, -, even_odd_merge_32, -</column>
+</table>
+</item>
+</section>
+</profile>

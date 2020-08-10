@@ -1,0 +1,5 @@
+   Build using "/opt/Xilinx/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_algo_unpacked.cpp
+   Compiling algo_unpacked_tb.cpp_pre.cpp.tb.cpp
+   Compiling algo_unpacked.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

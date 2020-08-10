@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jun 29 09:40:37 2020
+# Process ID: 4774
+# Current directory: /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/xsim.dir/algo_unpacked/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/webtalk.log
+# Journal file: /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/xsim.dir/algo_unpacked/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 29 09:40:37 2020...

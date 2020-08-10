@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'algo_unpacked'" level="0">
+<item name = "Date">Mon Aug 10 07:30:43 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">proj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.33, 8.091, 1.04</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">17, 17, 3, 3, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_even_odd_merge_64_fu_344">even_odd_merge_64, 6, 6, 3, 3, function</column>
+<column name="grp_even_odd_merge_32_fu_412">even_odd_merge_32, 3, 3, 3, 3, function</column>
+<column name="grp_even_odd_merge_16_fu_480">even_odd_merge_16, 2, 2, 3, 3, function</column>
+<column name="grp_even_odd_sort_4_256_fu_548">even_odd_sort_4_256, 2, 2, 3, 3, function</column>
+<column name="grp_even_odd_merge_8_fu_612">even_odd_merge_8, 2, 2, 3, 3, function</column>
+<column name="call_ret1_capture_objects_fu_680">capture_objects, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

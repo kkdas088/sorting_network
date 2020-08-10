@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vivado HLS Report for 'capture_objects'
+================================================================
+* Date:           Mon Aug 10 07:30:46 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        proj
+* Solution:       solution1
+* Product family: virtex7
+* Target device:  xc7vx690tffg1927-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.33|     0.000|        1.04|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |     2940|   3600|  866400|  433200|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-------------------+-----+-----+------------+-------------------+--------------+
+|ap_ready           | out |    1| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_0        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_1        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_2        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_3        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_4        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_5        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_6        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_7        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_8        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_9        | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_10       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_11       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_12       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_13       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_14       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_15       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_16       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_17       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_18       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_19       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_20       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_21       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_22       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_23       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_24       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_25       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_26       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_27       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_28       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_29       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_30       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_31       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_32       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_33       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_34       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_35       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_36       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_37       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_38       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_39       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_40       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_41       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_42       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_43       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_44       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_45       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_46       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_47       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_48       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_49       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_50       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_51       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_52       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_53       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_54       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_55       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_56       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_57       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_58       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|ap_return_59       | out |   10| ap_ctrl_hs |  capture_objects  | return value |
+|link_in_0_V_read   |  in |  192|   ap_none  |  link_in_0_V_read |    scalar    |
+|link_in_1_V_read   |  in |  192|   ap_none  |  link_in_1_V_read |    scalar    |
+|link_in_2_V_read   |  in |  192|   ap_none  |  link_in_2_V_read |    scalar    |
+|link_in_3_V_read   |  in |  192|   ap_none  |  link_in_3_V_read |    scalar    |
+|link_in_4_V_read   |  in |  192|   ap_none  |  link_in_4_V_read |    scalar    |
+|link_in_5_V_read   |  in |  192|   ap_none  |  link_in_5_V_read |    scalar    |
+|link_in_6_V_read   |  in |  192|   ap_none  |  link_in_6_V_read |    scalar    |
+|link_in_7_V_read   |  in |  192|   ap_none  |  link_in_7_V_read |    scalar    |
+|link_in_8_V_read   |  in |  192|   ap_none  |  link_in_8_V_read |    scalar    |
+|link_in_9_V_read   |  in |  192|   ap_none  |  link_in_9_V_read |    scalar    |
+|link_in_10_V_read  |  in |  192|   ap_none  | link_in_10_V_read |    scalar    |
+|link_in_11_V_read  |  in |  192|   ap_none  | link_in_11_V_read |    scalar    |
++-------------------+-----+-----+------------+-------------------+--------------+
+

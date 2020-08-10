@@ -1,0 +1,81 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'even_odd_merge_16'" level="0">
+<item name = "Date">Mon Aug 10 07:29:40 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">proj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.33, 7.164, 1.04</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2, 2, 3, 3, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_swap_fu_2704">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2712">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2720">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2728">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2736">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2744">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2752">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2760">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2768">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2776">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2784">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2792">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2800">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2808">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2816">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2824">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2832">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2840">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2848">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2856">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2864">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2872">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2880">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2888">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2896">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2904">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2912">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2920">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2928">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2936">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2944">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2952">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2960">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2968">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2976">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_2984">swap, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

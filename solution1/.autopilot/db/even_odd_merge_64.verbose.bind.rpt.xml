@@ -1,0 +1,146 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'even_odd_merge_64'" level="0">
+<item name = "Date">Mon Aug 10 07:30:37 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">proj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtex7</item>
+<item name = "Target device">xc7vx690tffg1927-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.33, 8.091, 1.04</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">6, 6, 3, 3, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_swap_fu_6781">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6789">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6797">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6805">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6813">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6821">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6829">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6837">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6845">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6853">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6861">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6869">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6877">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6885">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6893">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6901">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6909">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6917">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6925">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6933">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6941">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6949">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6957">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6965">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6973">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6981">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6989">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_6997">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7005">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7013">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7021">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7029">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7037">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7045">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7053">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7061">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7069">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7077">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7085">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7093">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7101">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7109">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7117">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7125">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7133">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7141">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7149">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7157">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7165">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7173">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7181">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7189">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7197">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7205">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7213">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7221">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7229">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7237">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7245">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7253">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7261">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7269">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7277">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7285">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7293">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7301">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7309">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7317">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7325">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7333">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7341">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7349">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7357">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7365">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7373">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7381">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7389">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7397">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7405">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7413">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7421">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7429">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7437">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7445">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7453">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7461">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7469">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7477">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7485">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7493">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7501">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7509">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7517">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7525">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7533">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7541">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7549">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7557">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7565">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7573">swap, 0, 0, 1, 1, function</column>
+<column name="grp_swap_fu_7581">swap, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Aug  6 23:27:20 2020
+# Process ID: 32484
+# Current directory: /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog
+# Command line: vivado -source open_wave.tcl
+# Log file: /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/vivado.log
+# Journal file: /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config /afs/hep.wisc.edu/user/kidas/private/scratch/APx-Gen0/APx_Gen0_Algo/VivadoHls/null_algo_unpacked/vivado_hls/proj/solution1/sim/verilog/algo_unpacked.wcfg
+close_sim
